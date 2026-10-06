@@ -1,4 +1,3 @@
-```tsx
 import type { Metadata } from "next";
 import { Sora, Montserrat } from "next/font/google";
 import Script from "next/script";
@@ -74,7 +73,6 @@ export default function RootLayout({
       className={`${sora.variable} ${montserrat.variable} scroll-smooth`}
     >
       <head>
-        {/* Google Tag Manager 1 */}
         <Script
           id="gtm-head"
           strategy="beforeInteractive"
@@ -87,7 +85,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
 
-        {/* Google Tag Manager 2 */}
         <Script
           id="gtm-head-mtz8c466"
           strategy="beforeInteractive"
@@ -104,7 +101,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body
         className={`${montserrat.className} min-h-screen flex flex-col antialiased text-[#020617]`}
       >
-        {/* Google Tag Manager 1 - noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K6BV9HQT"
@@ -114,7 +110,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
 
-        {/* Google Tag Manager 2 - noscript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MTZ8C466"
@@ -132,5 +127,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </html>
   );
 }
-```
-
