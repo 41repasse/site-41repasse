@@ -1,0 +1,25 @@
+# *
+User-agent: *
+Allow: /
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Host
+Host: https://41repasse.com.br
+
+# Sitemaps
+Sitemap: https://41repasse.com.br/sitemap.xml

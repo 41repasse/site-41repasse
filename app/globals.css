@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* ── CSS Custom Properties ──────────────────────────────── */
+:root {
+  --color-teal-primary:    #06709C;
+  --color-teal-dark:       #0F3A50;
+  --color-teal-mid:        #194D67;
+  --color-teal-deep:       #0C3144;
+  --color-white:           #FFFFFF;
+  --color-dark-navy:       #020617;
+  --color-card-overlay:    rgba(25, 77, 103, 0.66);
+  --color-light-blue:      #63B6D8;
+  --color-green-whatsapp:  #2DB742;
+  --gradient-hero:         linear-gradient(300deg, #06709C 0%, #0F3A50 70%);
+  --gradient-sections:     linear-gradient(300deg, #06709C 0%, #194D67 100%);
+}
+
+/* ── Base ──────────────────────────────────────────────── */
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+body {
+  color: var(--color-dark-navy);
+  overflow-x: hidden;
+}
+
+/* ── Eyebrow ────────────────────────────────────────────── */
+.eyebrow {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 6.7px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  display: block;
+}
+
+/* ── Gradients ──────────────────────────────────────────── */
+.bg-gradient-hero     { background: var(--gradient-hero); }
+.bg-gradient-sections { background: var(--gradient-sections); }
+
+/* ── Swiper overrides ───────────────────────────────────── */
+.swiper-pagination-bullet        { background: rgba(255,255,255,0.5) !important; }
+.swiper-pagination-bullet-active { background: #fff !important; }
+
+/* ── Data table ─────────────────────────────────────────── */
+.data-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.data-table th {
+  background: var(--color-teal-primary);
+  color: #fff;
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+.data-table td { padding: 12px 16px; border-bottom: 1px solid #eee; color: #444; font-size: 14px; }
+.data-table tr:nth-child(even) td { background: #f8fafc; }
